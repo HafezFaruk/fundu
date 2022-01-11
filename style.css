@@ -3,6 +3,9 @@
   padding: 0;
   box-sizing: border-box;
 }
+body::-webkit-scrollbar{
+  width: 0;
+}
 header {
   overflow: hidden;
 }
@@ -16,6 +19,7 @@ header {
 .common_color-hover:hover {
   color: var(--color);
 }
+
 .top_icon {
   color: #80808091;
 }
@@ -34,6 +38,7 @@ header {
   background-position: center center;
 }
 .man_header img {
+  margin-left: 70px;
 }
 ul li a {
   transition: 0.8s;
@@ -41,7 +46,6 @@ ul li a {
 }
 ul > li > a:hover {
   background-color: var(--color);
-  /* border-radius: 20px; */
   transform: scale(1);
   color: #fff;
 }
@@ -101,6 +105,7 @@ ul > li > a:hover {
   background-color: #fff;
   margin: 0px 60px;
   margin-top: -20px;
+  padding: 10px 0;
 }
 
 .text_italic {
@@ -114,11 +119,27 @@ ul > li > a:hover {
   background-position: center center;
 }
 
-/* .option_size {
-  background: rgba(204, 204, 204, 0.164);
-  opacity: 0.6;
+.input_style{
+  /* background: transparent; */
+  outline: none;
+  /* color: #fff; */
+  border: 1px solid gray;
+
+}
+.input_width{
+  width: 100%;
+}
+
+.input_flex{
+  display: flex;
+}
+
+.form_button{
+  background: var(--color);
   color: #fff;
-} */
+}
+
+
 .count_bg {
   background-image: url(./images/count-logo/bg_count.png);
   background-repeat: no-repeat;
@@ -148,22 +169,40 @@ ul > li > a:hover {
 .review_bg {
   background-image: url(./images/review/review-bg.png);
   background-repeat: no-repeat;
-  height: 15rem;
-  width: auto;
   background-position: center;
   background-size: contain;
 }
 
-.slide_img{
-  height: 60px;
-  width: 60px;
-  border-radius: 50%;
+.mySlidesText {
+  width: 40%;
+  text-align: justify;
+}
+.slide_img {
+  filter: grayscale(100%);
+}
+.slide_img:hover {
+  filter: grayscale(0%);
 }
 
+@media only screen and (max-width: 768px) {
+  .man_header img {
+    margin-left: 0px;
+  }
+  .mySlidesText {
+    width: 100%;
+  }
+}
 
-
-@media only screen and (max-width: 320px){
+@media only screen and (max-width: 320px) {
   .card_button {
-  margin: 0px 20px;
-}
+    margin: 0px 20px;
+    margin-top: -20px;
+  }
+  .mySlidesText {
+    width: 100%;
+  }
+
+  .man_header img {
+    margin-left: 0px;
+  }
 }

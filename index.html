@@ -5,6 +5,21 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Fundu</title>
+
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+    <style>
+      .mySlides {
+        display: none;
+      }
+      .dote_img {
+        height: 60px;
+        width: 60px;
+      }
+      .dote_img:hover {
+        cursor: pointer;
+      }
+    </style>
+
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -24,22 +39,24 @@
     <header id="home" class="bg_header pb-4">
       <div class="container">
         <!-- Header First -->
-        <div class="row my-3">
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-2 my-3">
           <!-- Left Site -->
-          <div class="top_icon col-md-6">
-            <i class="fab fa-facebook-f me-3"></i>
-            <i class="fab fa-twitter me-3"></i>
-            <i class="fab fa-behance me-3"></i>
-            <i class="fab fa-youtube me-3"></i>
-            <i class="fas fa-search me-3"></i>
+          <div class="top_icon col">
+            <i class="fab fa-facebook-f ms-2"></i>
+            <i class="fab fa-twitter ms-3"></i>
+            <i class="fab fa-behance ms-3"></i>
+            <i class="fab fa-youtube ms-3"></i>
+            <i class="fas fa-search ms-3"></i>
           </div>
           <!-- Right Site -->
-          <div class="d-flex col-md-6">
-            <i class="fas fa-lock me-2 top_icon"></i>
-            <h6>
-              <span>SIGNUP</span> /
-              <span>LOGIN</span>
-            </h6>
+          <div class="col d-flex flex-row-reverse">
+            <div class="d-flex">
+              <i class="fas fa-lock me-2 top_icon"></i>
+              <h6>
+                <span>SIGNUP</span> /
+                <span>LOGIN</span>
+              </h6>
+            </div>
           </div>
         </div>
 
@@ -149,6 +166,7 @@
         </div>
       </div>
     </header>
+
     <section class="container mt-5">
       <div class="row">
         <div class="col-md-6">
@@ -179,6 +197,7 @@
         </div>
       </div>
     </section>
+
     <section class="container md_style bg_events-text my-5">
       <div class="text-center">
         <h6 class="events_text">upcoming events</h6>
@@ -307,6 +326,7 @@
         <h1>Heart & Soul</h1>
       </div>
     </section>
+
     <!-- card -->
     <section class="container">
       <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
@@ -391,7 +411,7 @@
     <!-- from -->
 
     <section class="my-5 form_bg">
-      <div class="py-5">
+      <div class="py-5 container">
         <div class="text-center">
           <h6 class="common_color text-uppercase mt-5">Join with us</h6>
           <h1 class="text-white">Get Involve With Us</h1>
@@ -399,100 +419,108 @@
         </div>
 
         <form>
-          <div class="">
-            <div class="">
-              <div>
-                <label class="text-white" for="fname">First name</label><br />
-                <input type="text" id="fname" name="fname" />
-              </div>
-              <div>
-                <label class="text-white" for="lname">Last name</label><br />
-                <input type="text" id="lname" name="lname" />
+          <div>
+            <div class="mb-3">
+              <label class="text-white" for="fname">First name<span class="common_color">**</span></label><br />
+              <input
+                placeholder="First name"
+                class="input_style input_width p-1"
+                type="text"
+                id="fname"
+                name="fname"
+              />
+            </div>
+            <div class="mb-3">
+              <label class="text-white" for="lname">Last name<span class="common_color">**</span></label><br />
+              <input
+                placeholder="Last name"
+                class="input_style input_width p-1"
+                type="text"
+                id="lname"
+                name="lname"
+              />
+            </div>
+
+            <div class="mb-3">
+              <label class="text-white" for="email">Your Email<span class="common_color">**</span></label><br />
+              <input
+                placeholder="Email"
+                class="input_style input_width p-1"
+                type="email"
+                id="email"
+                name="email"
+              />
+            </div>
+
+            <div class="mb-3 input_width">
+              <label class="text-white">YOUR PHONE NUMBER<span class="common_color">**</span></label>
+              <div class="input-group">
+                <span>
+                  <select
+                    class="form-select input_style"
+                    aria-label="Default select example"
+                  >
+                    <option selected>(+880)</option>
+                    <option value="1">+990</option>
+                    <option value="2">+228</option>
+                    <option value="3">+463</option>
+                  </select></span
+                >
+
+                <input
+                  type="text"
+                  class="form-control input_style input_width"
+                />
               </div>
             </div>
 
-            <div class="">
-              <div>
-                <label class="text-white" for="email">Your Email</label><br />
-                <input type="email" id="email" name="email" />
-              </div>
-
+            <div class="input_width mb-3">
+              <label class="text-white" for="fname">RELIGION<span class="common_color">**</span></label>
               <select
-                class="form-select col"
+                class="form-select input_style"
                 aria-label="Default select example"
               >
-                <option selected>Open this select menu</option>
-                <option value="1">One</option>
-                <option value="2">Two</option>
-                <option value="3">Three</option>
+              
+                <option selected>Select Religion</option>
+                <option value="1">Man</option>
+                <option value="2">Female</option>
+                <option value="3">Other</option>
               </select>
             </div>
 
-            <div class="input-group mb-3">
-              <span class="option_size">
-                <select class="form-select" aria-label="Default select example">
-                  <option selected>(+880)</option>
-                  <option value="1">One</option>
-                  <option value="2">Two</option>
-                  <option value="3">Three</option>
-                </select>
-              </span>
-              <input
-                type="text"
-                class="form-control"
-                aria-label="Text input with dropdown button"
-              />
-            </div>
-            <div class="input-group mb-3 w-50">
-              <span class="option_size">
-                <select class="form-select" aria-label="Default select example">
-                  <option selected>(+880)</option>
-                  <option value="1">One</option>
-                  <option value="2">Two</option>
-                  <option value="3">Three</option>
-                </select>
-              </span>
-              <input
-                type="text"
-                class="form-control"
-                aria-label="Text input with dropdown button"
-              />
-            </div>
-            <div class="input-group mb-3 w-50">
-              <span class="option_size">
-                <select class="form-select" aria-label="Default select example">
-                  <option selected>(+880)</option>
-                  <option value="1">One</option>
-                  <option value="2">Two</option>
-                  <option value="3">Three</option>
-                </select>
-              </span>
-              <input
-                type="text"
-                class="form-control"
-                aria-label="Text input with dropdown button"
-              />
-            </div>
-            <div class="input-group mb-3 w-50">
-              <span class="option_size">
-                <select class="form-select" aria-label="Default select example">
-                  <option selected>(+880)</option>
-                  <option value="1">One</option>
-                  <option value="2">Two</option>
-                  <option value="3">Three</option>
-                </select>
-              </span>
-              <input
-                type="text"
-                class="form-control"
-                aria-label="Text input with dropdown button"
-              />
+            <div>
+              <label class="text-white" for="fname">LOCATION<span class="common_color">**</span></label>
+              <div class="input_width d-flex justify-content-between">
+                <div class="input-group mb-3 input_width me-3">
+                  <select
+                    class="form-select input_style"
+                    aria-label="Default select example"
+                  >
+                    <option selected>Country</option>
+                    <option value="1">Bangladesh</option>
+                    <option value="2">Canada</option>
+                    <option value="3">India</option>
+                  </select>
+                </div>
+
+                <div class="input-group mb-3 input_width">
+                  <select
+                    class="form-select input_style"
+                    aria-label="Default select example"
+                  >
+                    <option selected>State</option>
+                    <option value="1">Dhaka</option>
+                    <option value="2">Ottawa</option>
+                    <option value="3">New Delhi</option>
+                  </select>
+                </div>
+              </div>
             </div>
           </div>
           <div class="d-flex justify-content-center">
             <button
               type="button"
-              class="btn my_button border border-2 px-4 rounded-pill text-whhit"
+              class="btn form_button px-4 rounded-pill text-uppercase"
             >
               JOIN RIGHT NEW
             </button>
@@ -500,6 +528,7 @@
         </form>
       </div>
     </section>
+
     <!-- features -->
     <section class="container md_style bg_features my-5">
       <div class="text-center">
@@ -508,9 +537,10 @@
         <h3>better, together</h3>
       </div>
     </section>
-    <section class="container">
+
+    <section class="container mb-5">
       <div class="row row-cols-1 row-cols-sm-1 row-cols-md-3 row-cols-lg-3">
-        <div class="col d-flex">
+        <div class="col d-flex mb-4">
           <div class="me-2">
             <img
               class="img-fluid"
@@ -524,10 +554,10 @@
               Consectetur adipisicing elit, sed do eiusmod tempor it incididunt
               ut labore.
             </p>
-            <p class="common_color-hover">Read More</p>
+            <span class="common_color-hover fs-6">Read More</span>
           </div>
         </div>
-        <div class="col d-flex">
+        <div class="col d-flex mb-4">
           <div class="me-2">
             <img
               class="img-fluid"
@@ -541,10 +571,10 @@
               Consectetur adipisicing elit, sed do eiusmod tempor it incididunt
               ut labore.
             </p>
-            <p class="common_color-hover">Read More</p>
+            <span class="common_color-hover fs-6">Read More</span>
           </div>
         </div>
-        <div class="col d-flex">
+        <div class="col d-flex mb-4">
           <div class="me-2">
             <img
               class="img-fluid"
@@ -558,10 +588,10 @@
               Consectetur adipisicing elit, sed do eiusmod tempor it incididunt
               ut labore.
             </p>
-            <p class="common_color-hover">Read More</p>
+            <span class="common_color-hover fs-6">Read More</span>
           </div>
         </div>
-        <div class="col d-flex">
+        <div class="col d-flex mb-4">
           <div class="me-2">
             <img
               class="img-fluid"
@@ -575,10 +605,10 @@
               Consectetur adipisicing elit, sed do eiusmod tempor it incididunt
               ut labore.
             </p>
-            <p class="common_color-hover">Read More</p>
+            <span class="common_color-hover fs-6">Read More</span>
           </div>
         </div>
-        <div class="col d-flex">
+        <div class="col d-flex mb-4">
           <div class="me-2">
             <img
               class="img-fluid"
@@ -592,10 +622,10 @@
               Consectetur adipisicing elit, sed do eiusmod tempor it incididunt
               ut labore.
             </p>
-            <p class="common_color-hover">Read More</p>
+            <span class="common_color-hover fs-6">Read More</span>
           </div>
         </div>
-        <div class="col d-flex">
+        <div class="col d-flex mb-4">
           <div class="me-2">
             <img
               class="img-fluid"
@@ -609,7 +639,7 @@
               Consectetur adipisicing elit, sed do eiusmod tempor it incididunt
               ut labore.
             </p>
-            <p class="common_color-hover">Read More</p>
+            <span class="common_color-hover fs-6">Read More</span>
           </div>
         </div>
       </div>
@@ -667,12 +697,70 @@
     <!-- review -->
 
     <section class="container review_bg my-5">
+      <div class="d-flex justify-content-center">
+        <img
+          class="img-fluid review_freeBees mb-3"
+          src="./images/review/freeBees.png"
+        />
+      </div>
       <div class="text-center">
-        
+        <div>
+          <div class="d-flex justify-content-center">
+            <div class="mySlidesText">
+              <p class="mySlides">
+                “Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
+                do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                laboris nisi ut aliquip ex ea commodo consequat uis aute irure
+                dolor”
+              </p>
+              <p class="mySlides">
+                Howard Schatz lives and works in New York with his wife and
+                business partner, Beverly Ornstein. His fine art work has been
+                exhibited in museums and photography galleries internationally
+                and has been published in numerous
+              </p>
+              <p class="mySlides">
+                book consists of leatherette cover that opens out to a book on
+                the left and a slide box on the right, minor wear, scattered
+                notes, slides present, 126 pages including index, how to treat
+                Fundus disease with lasers and explanation of slides
+              </p>
+            </div>
+          </div>
+
+          <div>
+            <div>
+              <img
+                class="dote_img slide_img"
+                onclick="currentDiv(1)"
+                src="./images/review/review_man2.png"
+                alt="img"
+              />
+              <img
+                class="dote_img"
+                onclick="currentDiv(2)"
+                src="./images/review/review_man1.png"
+                alt="img"
+              />
+              <img
+                class="dote_img slide_img"
+                onclick="currentDiv(3)"
+                src="./images/review/review_man3.png"
+                alt="img"
+              />
+            </div>
+          </div>
+          <div>
+            <h5>Rosalina D. Pong</h5>
+            <h6>founder, uihub</h6>
+          </div>
+        </div>
       </div>
     </section>
+
     <!-- update -->
-     <section class="container md_style bg_update my-5">
+    <section class="container md_style bg_update my-5">
       <div class="text-center">
         <h6 class="events_text mt-5">News</h6>
         <h1>Stay Connet With</h1>
@@ -684,13 +772,17 @@
       <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
         <div class="col">
           <div class="card h-100">
-            <img src="./images/update/update_img1.png" class="card-img-top" alt="..." />
-            
+            <img
+              src="./images/update/update_img1.png"
+              class="card-img-top"
+              alt="..."
+            />
+
             <div class="card-body">
               <h6 class="common_color text-uppercase">14th may 2018</h6>
               <h5 class="card-title">
                 Consectetur adipisicing elit,<br />
-                sed do eiusmod tempor. 
+                sed do eiusmod tempor.
               </h5>
               <p class="card-text">
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
@@ -698,19 +790,25 @@
               </p>
             </div>
             <div class="card-footer border border-0 bg-white">
-              <h6 class="common_color"><i class="fas fa-angle-double-right"></i></h6>
+              <h6 class="common_color">
+                <i class="fas fa-angle-double-right"></i>
+              </h6>
             </div>
           </div>
         </div>
         <div class="col">
           <div class="card h-100">
-            <img src="./images/update/update_img2.png" class="card-img-top" alt="..." />
-           
+            <img
+              src="./images/update/update_img2.png"
+              class="card-img-top"
+              alt="..."
+            />
+
             <div class="card-body">
               <h6 class="common_color text-uppercase">14th may 2018</h6>
               <h5 class="card-title">
                 Consectetur adipisicing elit,<br />
-                sed do eiusmod tempor. 
+                sed do eiusmod tempor.
               </h5>
               <p class="card-text">
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
@@ -718,19 +816,25 @@
               </p>
             </div>
             <div class="card-footer border border-0 bg-white">
-              <h6 class="common_color"><i class="fas fa-angle-double-right"></i></h6>
+              <h6 class="common_color">
+                <i class="fas fa-angle-double-right"></i>
+              </h6>
             </div>
           </div>
         </div>
         <div class="col">
           <div class="card h-100">
-            <img src="./images/update/update_img3.png" class="card-img-top" alt="..." />
-           
+            <img
+              src="./images/update/update_img3.png"
+              class="card-img-top"
+              alt="..."
+            />
+
             <div class="card-body">
               <h6 class="common_color text-uppercase">14th may 2018</h6>
               <h5 class="card-title">
                 Consectetur adipisicing elit,<br />
-                sed do eiusmod tempor. 
+                sed do eiusmod tempor.
               </h5>
               <p class="card-text">
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
@@ -738,12 +842,15 @@
               </p>
             </div>
             <div class="card-footer border border-0 bg-white">
-              <h6 class="common_color"><i class="fas fa-angle-double-right"></i></h6>
+              <h6 class="common_color">
+                <i class="fas fa-angle-double-right"></i>
+              </h6>
             </div>
           </div>
         </div>
       </div>
     </section>
+
     <!-- footer -->
     <footer id="footer" class="footer_bg text-white">
       <div class="container text-white">
@@ -809,6 +916,38 @@
       </div>
     </footer>
 
+    <script>
+      var slideIndex = 1;
+      showDivs(slideIndex);
+
+      function plusDivs(n) {
+        showDivs((slideIndex += n));
+      }
+
+      function currentDiv(n) {
+        showDivs((slideIndex = n));
+      }
+
+      function showDivs(n) {
+        var i;
+        var x = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("demo");
+        if (n > x.length) {
+          slideIndex = 1;
+        }
+        if (n < 1) {
+          slideIndex = x.length;
+        }
+        for (i = 0; i < x.length; i++) {
+          x[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" w3-white", "");
+        }
+        x[slideIndex - 1].style.display = "block";
+        dots[slideIndex - 1].className += " w3-white";
+      }
+    </script>
     <script
       src="https://kit.fontawesome.com/d08d5e8eb8.js"
       crossorigin="anonymous"
