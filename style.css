@@ -1,0 +1,169 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+header {
+  overflow: hidden;
+}
+:root {
+  --color: #ec6e39;
+}
+
+.common_color {
+  color: var(--color);
+}
+.common_color-hover:hover {
+  color: var(--color);
+}
+.top_icon {
+  color: #80808091;
+}
+.logo {
+  height: 30px;
+}
+.bg_header {
+  background-image: linear-gradient(
+      to bottom,
+      rgba(255, 255, 255, 0.925) 0%,
+      rgba(255, 255, 255, 0.918) 100%
+    ),
+    url(./images/bg_header.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+.man_header img {
+}
+ul li a {
+  transition: 0.8s;
+  transition-property: color, transform;
+}
+ul > li > a:hover {
+  background-color: var(--color);
+  /* border-radius: 20px; */
+  transform: scale(1);
+  color: #fff;
+}
+
+.my_button:hover {
+  background-color: var(--color);
+}
+.united {
+  font-size: 3rem;
+}
+.arrow_logo {
+  color: var(--color);
+  font-size: 2rem;
+  margin-top: -70px;
+  text-align: center;
+}
+
+.get_mandir {
+  font-size: 20px;
+  font-weight: 500;
+}
+.get_mandir:hover {
+  color: var(--color);
+  cursor: pointer;
+}
+
+.bg_events-text {
+  background-image: url(./images/bg1.png);
+  background-repeat: no-repeat;
+}
+.md_style {
+  height: 7rem;
+  width: auto;
+  background-position: center;
+  background-size: contain;
+}
+.events_text {
+  color: var(--color);
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
+.date_set {
+  background-color: var(--color);
+  color: #fff;
+  padding: 15px 30px;
+  height: 110px;
+  margin-right: 15px;
+}
+
+.bg_sermons {
+  background-image: url(./images/sermons.png);
+  background-repeat: no-repeat;
+}
+
+.card_button {
+  background-color: #fff;
+  margin: 0px 60px;
+  margin-top: -20px;
+}
+
+.text_italic {
+  font-style: italic;
+}
+
+.form_bg {
+  background-image: url(./images/jisu_bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+/* .option_size {
+  background: rgba(204, 204, 204, 0.164);
+  opacity: 0.6;
+  color: #fff;
+} */
+.count_bg {
+  background-image: url(./images/count-logo/bg_count.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+.count_text {
+  font-size: 3rem;
+}
+
+.footer_bg {
+  background-image: url(./images/footer_bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.bg_features {
+  background-image: url(./images/features.png);
+  background-repeat: no-repeat;
+}
+.bg_update {
+  background-image: url(./images/update/updates_bg.png);
+  background-repeat: no-repeat;
+}
+
+.review_bg {
+  background-image: url(./images/review/review-bg.png);
+  background-repeat: no-repeat;
+  height: 15rem;
+  width: auto;
+  background-position: center;
+  background-size: contain;
+}
+
+.slide_img{
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+}
+
+
+
+@media only screen and (max-width: 320px){
+  .card_button {
+  margin: 0px 20px;
+}
+}
