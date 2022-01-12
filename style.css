@@ -3,7 +3,7 @@
   padding: 0;
   box-sizing: border-box;
 }
-body::-webkit-scrollbar{
+body::-webkit-scrollbar {
   width: 0;
 }
 header {
@@ -44,10 +44,10 @@ ul li a {
   transition: 0.8s;
   transition-property: color, transform;
 }
-ul > li > a:hover {
+ul li a:hover {
+  color: #fff;
   background-color: var(--color);
   transform: scale(1);
-  color: #fff;
 }
 
 .my_button:hover {
@@ -118,27 +118,32 @@ ul > li > a:hover {
   background-size: cover;
   background-position: center center;
 }
-
-.input_style{
-  /* background: transparent; */
-  outline: none;
-  /* color: #fff; */
-  border: 1px solid gray;
-
+select option {
+  color: ;
 }
-.input_width{
+.input_style {
+  background: transparent;
+  outline: none;
+  color: #fff;
+  border: 1px solid gray;
+}
+.input_style:focus {
+  background: transparent;
+}
+.input_width {
   width: 100%;
 }
 
-.input_flex{
+.input_flex {
   display: flex;
 }
-
-.form_button{
+.form_list {
+  display: flex;
+}
+.form_button {
   background: var(--color);
   color: #fff;
 }
-
 
 .count_bg {
   background-image: url(./images/count-logo/bg_count.png);
@@ -191,6 +196,10 @@ ul > li > a:hover {
   .mySlidesText {
     width: 100%;
   }
+  .form_list {
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 @media only screen and (max-width: 320px) {
@@ -205,4 +214,67 @@ ul > li > a:hover {
   .man_header img {
     margin-left: 0px;
   }
+}
+
+.mySlides {
+  display: none;
+}
+.dote_img {
+  height: 60px;
+  width: 60px;
+}
+.dote_img:hover {
+  cursor: pointer;
+}
+
+
+
+
+
+
+#shiva
+{
+  width: 100px;
+	height: 100px;
+	background: red;
+	-moz-border-radius: 50px;
+	-webkit-border-radius: 50px;
+	border-radius: 50px;
+  float:left;
+  margin:5px;
+}
+.count
+{
+  line-height: 100px;
+  color:white;
+  margin-left:30px;
+  font-size:25px;
+}
+#talkbubble {
+   width: 120px;
+   height: 80px;
+   background: red;
+   position: relative;
+   -moz-border-radius:    10px;
+   -webkit-border-radius: 10px;
+   border-radius:         10px;
+  float:left;
+  margin:20px;
+}
+#talkbubble:before {
+   content:"";
+   position: absolute;
+   right: 100%;
+   top: 26px;
+   width: 0;
+   height: 0;
+   border-top: 13px solid transparent;
+   border-right: 26px solid red;
+   border-bottom: 13px solid transparent;
+}
+
+.linker
+{
+  font-size : 20px;
+  font-color: black;
 }
